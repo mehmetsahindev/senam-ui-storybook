@@ -1,0 +1,36 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Installation" />
+
+# Installation
+
+Install the package via npm:
+
+```bash
+npm i senam-ui
+```
+
+## Setup
+
+Wrap your application with `SenamProvider`:
+
+```tsx
+import { SenamProvider } from "senam-ui";
+
+export function App() {
+  return <SenamProvider>{/* your app */}</SenamProvider>;
+}
+```
+
+## Styles
+
+Import the global styles in your project root (e.g. `main.tsx`, `index.tsx` or `app/layout.tsx`):
+
+```tsx
+import "senam-ui/style.css";
+```
+
+## Notes
+
+- `SenamProvider` is required for theme and core functionality.
+- Make sure styles are imported once at the root level.
